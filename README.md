@@ -12,4 +12,4 @@ Tecnologias y Caracteristicas
 - JavaScript
 - Responsive Web Design
 ### Probar Aplicacion
-Ingresa en el enlace <a href="https://fabregu.github.io/encrytor-alura/"></a> 
+Ingresa en el enlace https://fabregu.github.io/encrytor-alura/
