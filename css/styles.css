@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;    
+    font-family: 'Roboto', sans-serif;
+}
+
+button{
+    width: 200px;
+    padding: 15px;
+    margin: 10px 20px;
+    background: #0A3871;
+    color: #fff;
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+button:nth-of-type(2){
+    background: #D8DFE8;
+    color: #0A3871;
+}
+.hidden{
+    display: none;
+    color: #fff;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#a1b0e6,#F3F5FC);
+}
+.logo{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+.left-side{
+    justify-content: center;
+    align-content: center;
+    width: 60%;  
+    height: auto;  
+    padding: 200px 30px;
+}
+h1{
+    justify-content: center;
+    text-align: center;
+    line-height: 2;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #0A3871;
+}
+.texto{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #2e65a8;
+    font-size: 1.5rem;
+    line-height: 2;    
+   
+}
+.inputa{
+    margin-left: 32px;
+    padding: 5px;
+    border: none;
+    background: none;
+    color: #0A3871;
+    font-size: 1.2rem;    
+    text-align: center;
+}
+.botones{
+    padding-left: 20%;
+    padding-top: 80px;
+    padding-bottom: 20%;
+}
+.botones i{
+    font-size: .7rem;
+    margin-left: 15px;
+}
+.btn.box{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 10px;
+    padding: 10px 10px 10px;
+}
+
+.rigth-side{
+    margin: 40px 40px 40px 40px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 30%;
+    height:90%;
+      
+    background: #FFFFFF;
+
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+/* Muñeco */
+.rigth-side img{
+    width: 90%;
+    height: auto;
+    left: 1032px;
+    margin-top: 15vh;
+}
+.rigth-side span{
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    line-height: 3;
+    margin-left: 30%;
+}
+.inputb{
+    margin-left: 10%;
+    margin-top: 10px;
+    border: 0;
+    width: 80%;
+    justify-content: center;
+    font-size: .8em;
+    color: #495057;
+}
+#btn-copiar{
+    margin-top: 110%;
+    margin-left: 25%;
+}
+
+.footer{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer strong{
+    color: #0A3871;
+}
+@media (max-width: 1200px){  
+   .inputa{
+       margin-top: 80px;
+       margin-bottom: 80px;
+       text-align: justify;
+   }
+   .botones{
+       margin-top: 60px;
+       margin-bottom: 50px;
+   }
+   .rigth-side{
+       height: 90%;
+   }
+    .rigth-side span{
+        margin-left: 15%;
+        font-weight: bold;
+        line-height: 3;
+    }
+    #btn-copiar{
+        margin-top: 60%;
+        margin-left: 12%;
+    }
+}
+@media (max-width: 768px){
+    html{
+        font-size: 80%;      
+    }
+    .logo{
+        top: 15px;
+        left: 0;
+    }
+    .logo img{
+        width: 60px;
+        height: auto;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .left-side{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 100px 30px;
+        width: 100%;
+        height: 50%;        
+    }
+    .botones{
+        padding-bottom: 5%;
+    }
+    .footer{
+        display: none;
+    }
+    .rigth-side{
+        width: 100%;
+        height: 30%;
+        margin: 20px;
+    }
+    .rigth-side img{
+        display: none;
+    }
+    .rigth-side span{
+        margin-left: 35%;
+    }
+    .inputb{        
+        margin: 10px 15px;
+        text-align: center;
+        color: #495057;
+    }
+    #btn-copiar{
+        margin-top: 20%;
+        margin-left: 35%;
+    }
+}
+@media (max-width: 480px){
+    html{
+        font-size: 50%;        
+    }
+    h1{
+        display: none;
+    }
+    .botones{
+        justify-content: center;
+        align-items: center;
+        padding-left: 10%;
+    }
+    .inputb{
+        padding-top: 10px;
+    }
+    .rigth-side span{
+        margin-left: 20%;
+    }
+    #btn-copiar{
+        margin-top: 20%;
+        margin-left: 25%;
+    }
+    .footer{
+        display: none;
+    }
+}
+@media (max-width: 375px){
+    .texto{
+        margin-top: 50px;
+    }
+    .inputb{
+        padding-top: 10px;
+    }
+    #btn-copiar{
+        width: 50%;
+        margin-top: 10%;
+    }
+}
